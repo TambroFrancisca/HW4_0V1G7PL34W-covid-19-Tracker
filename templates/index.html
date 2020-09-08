@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>covid-19 tracker></title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="container">
@@ -14,7 +14,7 @@
     <section class="row">
         <div class="col-12">
 
-            <img src="img/rec.png" alt="App Logo">
+            <img src="{{ url_for('static', filename='img/rec.png')}}" alt="App Logo">
             <h1 class="d-inline">Yison covid-19 Tracker</h1>
 
         </div>
@@ -90,6 +90,6 @@
         </div>
        </section>
     </div>
-    <script src="js/index.js"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>
 </html>
